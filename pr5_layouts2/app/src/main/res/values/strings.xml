@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pr5_layouts</string>
+    <string name="action_settings">Settings</string>
+    <string name="cell0">Cell0</string>
+    <string name="cell1">Cell1</string>
+    <string name="cell2">Cell2</string>
+    <string name="cell3">Cell3</string>
+    <string name="boton">OK</string>
+</resources>

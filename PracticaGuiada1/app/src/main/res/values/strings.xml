@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PracticaGuiada1</string>
+    <string name="action_settings">Settings</string>
+    <string name="myTextView">Status</string>
+    <string name="boton">press me</string>
+</resources>

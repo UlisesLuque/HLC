@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OperarNumeros</string>
+    <string name="action_settings">Settings</string>
+    <string name="numero1">Número 1:</string>
+    <string name="numero2">Número 2:</string>
+    <string name="resultado">Resultado :</string>
+    <string name="sumar">+</string>
+    <string name="restar">-</string>
+    <string name="multiplicar">x</string>
+    <string name="dividir">/</string>
+
+</resources>

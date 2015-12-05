@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="tvText">Mensaje</string>
+    <string name="boton">send</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+
+</resources>
