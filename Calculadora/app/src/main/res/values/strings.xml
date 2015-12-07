@@ -26,4 +26,13 @@
     <string name="cero">0</string>
     <string name="coma">,</string>
     <string name="igual">=</string>
+
+    <string name="coseno">cos</string>
+    <string name="sin">sin</string>
+    <string name="tan">tan</string>
+    <string name="sinh">sinh</string>
+    <string name="cosh">cosh</string>
+    <string name="los">log</string>
+    <string name="cubo">x3</string>
+    <string name="tanh">tanh</string>
 </resources>
