@@ -1,5 +1,6 @@
 package example.org.calculadora;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -43,10 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button tan;
     private Button log;
     private TextView tvPantalla;
-    private String numero1 = "";
-    private String numero2 = "";
+    private String numero1 = "0";
+    private String numero2 = "0";
     private String resultado = "";
     private String operacion= "";
+    private String auxOperacion  = "";
     private boolean mostrar = true;
     private int operar = 0;
     private boolean perOperar = false;
@@ -59,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         modulo = (Button) findViewById(R.id.buttonModulo);
         raiz = (Button) findViewById(R.id.buttonRaiz);
@@ -85,15 +86,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cero = (Button) findViewById(R.id.button0);
         coma = (Button) findViewById(R.id.buttonComa);
         igual = (Button) findViewById(R.id.buttonIgual);
-        cubo = (Button) findViewById(R.id.cubo);
-        sinh = (Button) findViewById(R.id.sinh);
-        cosh = (Button) findViewById(R.id.cosh);
-        sin = (Button) findViewById(R.id.sin);
-        tanh = (Button) findViewById(R.id.tanh);
-        cos = (Button) findViewById(R.id.cos);
-        tan = (Button) findViewById(R.id.tan);
-        log = (Button) findViewById(R.id.log);
         tvPantalla = (TextView) findViewById(R.id.tvPatalla);
+
+        if(getRequestedOrientation() == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
+            cubo = (Button) findViewById(R.id.cubo);
+            sinh = (Button) findViewById(R.id.sinh);
+            cosh = (Button) findViewById(R.id.cosh);
+            sin = (Button) findViewById(R.id.sin);
+            tanh = (Button) findViewById(R.id.tanh);
+            cos = (Button) findViewById(R.id.cos);
+            tan = (Button) findViewById(R.id.tan);
+            log = (Button) findViewById(R.id.log);
+
+        }
 
 
         modulo.setOnClickListener(this);
@@ -121,14 +126,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         coma.setOnClickListener(this);
         igual.setOnClickListener(this);
         tvPantalla.setOnClickListener(this);
-        cubo.setOnClickListener(this);
-        sinh.setOnClickListener(this);
-        cosh.setOnClickListener(this);
-        sin.setOnClickListener(this);
-        cos.setOnClickListener(this);
-        tan.setOnClickListener(this);
-        log.setOnClickListener(this);
-        tanh.setOnClickListener(this);
+
+        if(getRequestedOrientation() == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE){
+            cubo.setOnClickListener(this);
+            sinh.setOnClickListener(this);
+            cosh.setOnClickListener(this);
+            sin.setOnClickListener(this);
+            cos.setOnClickListener(this);
+            tan.setOnClickListener(this);
+            log.setOnClickListener(this);
+            tanh.setOnClickListener(this);
+        }
     }
 
     @Override
@@ -201,19 +209,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numero = ".";
                 break;
             case R.id.buttonCE:
-                numero1 = "";
-                numero2 = "";
-                resultado = "";
+                numero1 = "0";
+                numero2 = "0";
+                resultado = "0";
                 operar = 0;
                 perOperar = false;
-                break;
+                tvPantalla.setText(numero1);
+                return;
             case R.id.buttonC:
                 operacion = "c";
                 if(operar == 0)
-                    numero1 = "";
+                    numero1 = "0";
                 else
-                    numero2 = "";
-                break;
+                    numero2 = "0";
+                tvPantalla.setText(numero1);
+                return;
             case R.id.buttonRetroceso:
                 if(operar == 0)
                     if(numero1.length() != 0)
@@ -260,13 +270,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonIgual:
                 if(operar > 0 && numero2 != ""){
+                    auxOperacion = operacion;
                     operar();
                     if(resultado.substring(resultado.length()-2).equals(".0"))
                         resultado = resultado.substring(0, resultado.length()-2);
                     operar = 0;
-                    numero1 =resultado;
+                    numero1 = resultado;
                     numero2 = "";
                     tvPantalla.setText(resultado);
+                    perOperar = true;
                     return;
                 }
                 break;
@@ -282,18 +294,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(operar == 0)
                     numero1 = Double.toString(Math.pow(Double.parseDouble(numero1), 2));
                 else {
-                    resultado = Double.toString(Math.pow(Double.parseDouble(resultado), 2));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.pow(Double.parseDouble(resultado), 2));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.buttonRaiz:
                 if(operar == 0)
                     numero1 = Double.toString(Math.sqrt(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.sqrt(Double.parseDouble(resultado)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.sqrt(Double.parseDouble(resultado)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.buttonModulo:
@@ -309,85 +325,110 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(operar == 0)
                     numero1 = Double.toString(1/(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(1/(Double.parseDouble(resultado)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(1/(Double.parseDouble(resultado)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.sin:
                 if(operar == 0)
                     numero1 = Double.toString(Math.sin(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.sin(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.sin(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.cos:
                 if(operar == 0)
                     numero1 = Double.toString(Math.cos(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.cos(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.cos(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.tan:
                 if(operar == 0)
                     numero1 = Double.toString(Math.tan(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.tan(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.tan(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.log:
                 if(operar == 0)
                     numero1 = Double.toString(Math.log(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.log(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.log(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
             case R.id.cubo:
                 if(operar == 0)
                     numero1 = Double.toString(Math.pow(Double.parseDouble(numero1), 3));
                 else {
-                    resultado = Double.toString(Math.pow(Double.parseDouble(resultado), 3));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.pow(Double.parseDouble(resultado), 3));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.sinh:
                 if(operar == 0)
                     numero1 = Double.toString(Math.sinh(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.sinh(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
-                }
+                    if(perOperar){
+                        resultado = Double.toString(Math.sinh(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
+                    if(numero1 == "0")
+                        numero1="";                }
                 break;
             case R.id.cosh:
                 if(operar == 0)
                     numero1 = Double.toString(Math.cosh(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.cosh(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.cosh(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
             case R.id.tanh:
                 if(operar == 0)
                     numero1 = Double.toString(Math.tanh(Double.parseDouble(numero1)));
                 else {
-                    resultado = Double.toString(Math.tanh(Double.parseDouble(numero1)));
-                    tvPantalla.setText(resultado);
-                    return;
+                    if(perOperar){
+                        resultado = Double.toString(Math.tanh(Double.parseDouble(numero1)));
+                        tvPantalla.setText(resultado);
+                        return;
+                    }
                 }
                 break;
 
 
         }
+
+        if(numero1 == "0")
+            numero1="";
+        else if(numero2 == "0")
+            numero2="";
+
 
         if(operar == 0){
             numero1 += numero;
@@ -395,6 +436,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (operar == 1){
             numero2 += numero;
             tvPantalla.setText(numero2);
+            auxOperacion = operacion;
         } else if (operar > 1){
             if(mostrar){
                 operar();
@@ -405,6 +447,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 tvPantalla.setText(resultado);
                 mostrar = false;
             }else {
+                auxOperacion = operacion;
                 numero2 += numero;
                 tvPantalla.setText(numero2);
             }
@@ -413,7 +456,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void operar(){
-        switch (operacion){
+        switch (auxOperacion){
             case "dividir":
                 resultado = Double.toString(Double.parseDouble(numero1) / Double.parseDouble(numero2));
                 break;
