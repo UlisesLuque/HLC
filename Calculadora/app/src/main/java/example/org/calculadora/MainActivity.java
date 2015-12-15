@@ -218,14 +218,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             case R.id.buttonC:
                 operacion = "c";
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = "0";
                 else
                     numero2 = "0";
                 tvPantalla.setText(numero1);
                 return;
             case R.id.buttonRetroceso:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     if(numero1.length() != 0)
                         numero1 = numero1.substring(0, numero1.length()-1);
                 else
@@ -284,14 +284,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonPosNeg:
                 operacion = "cambiar";
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = "-" + numero1;
                 else
                     numero2 = "-" + numero2;
                 break;
 
             case R.id.buttonCuadrado:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.pow(Double.parseDouble(numero1), 2));
                 else {
                     if(perOperar){
@@ -302,7 +302,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonRaiz:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.sqrt(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -322,7 +322,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonX:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(1/(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -333,7 +333,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.sin:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.sin(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -344,7 +344,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.cos:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.cos(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -355,7 +355,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.tan:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.tan(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -366,7 +366,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.log:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.log(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -376,7 +376,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
             case R.id.cubo:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.pow(Double.parseDouble(numero1), 3));
                 else {
                     if(perOperar){
@@ -387,7 +387,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.sinh:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.sinh(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -399,7 +399,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         numero1="";                }
                 break;
             case R.id.cosh:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.cosh(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){
@@ -410,7 +410,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.tanh:
-                if(operar == 0)
+                if(operar == 0 && perOperar)
                     numero1 = Double.toString(Math.tanh(Double.parseDouble(numero1)));
                 else {
                     if(perOperar){

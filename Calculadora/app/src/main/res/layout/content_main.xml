@@ -54,7 +54,6 @@
                 android:textColor="#4D4D4D"
                 android:textSize="24sp"
                 android:textAlignment="center"
-                android:layout_columnWeight="1"
                 android:focusableInTouchMode="false"
                 android:layout_rowWeight="1"
                 android:layout_weight="1" />
