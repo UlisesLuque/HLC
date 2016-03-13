@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Baloncesto</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="itemAcercaDe">Sobre mí</string>
+    <string name="itemEquipos">Equipos</string>
+    <string name="itemContador">Contador</string>
+    <string name="autor">Autor: Ulises Luque Páez</string>
+    <string name="nombreApp">Score BasketBall</string>
+    <string name="version">Versión: 2.0</string>
+
+    <string name="estadisticas">Estadisticas</string>
+    <string name="bt1">1</string>
+    <string name="bt2">2</string>
+    <string name="bt3">3</string>
+    <string name="btMore">+</string>
+    <string name="btLess">-</string>
+    <string name="tvCount">0</string>
+    <string name="btReset">REINICIAR</string>
+    <string name="tvEquipo1">LOCAL</string>
+    <string name="tvEquipo2">VISITANTE</string>
+    <string name="tvEliga">Eliga el nombre de los equipos:</string>
+    <string name="estblecerEquipos">Establecer</string>
+    <string name="nombreEquipoLocal">Equipo local</string>
+    <string name="nombreEquipoVisitante">Equipo visitante</string>
+    <string name="title_activity_equipos">Equipos</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+
+    <string name="deseaReiniciar">Perderá las puntuaciones actuales.</string>
+    <string name="reiniciarSi">Si</string>
+    <string name="reinicarNo">No</string>
+
+</resources>

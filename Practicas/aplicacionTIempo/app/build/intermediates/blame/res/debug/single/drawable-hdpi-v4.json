@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\temperatura.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\temperatura.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\lluvia.jpg",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\lluvia.jpg"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\viento.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\viento.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\soleado.jpg",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\soleado.jpg"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nublado.jpg",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\nublado.jpg"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\humedad.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\aplicacionTIempo\\app\\src\\main\\res\\drawable-hdpi\\humedad.png"
+    }
+]

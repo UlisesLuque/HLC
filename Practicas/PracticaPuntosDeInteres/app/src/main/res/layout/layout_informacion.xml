@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wwwul.practicapuntosdeinteres.Informacion"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+        <LinearLayout
+            tools:context="com.example.wwwul.practicapuntosdeinteres.Informacion"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:background="#EEEEEE" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/ivImagen"
+                android:src="@drawable/mezquita"
+                android:layout_weight="40"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/tvTitulo"
+                android:layout_weight="10"
+                android:background="#FFFFFF"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tvDescripcion"
+                android:layout_weight="50"
+                android:background="#FFFFFF"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

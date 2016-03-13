@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PracticaPuntosDeInteres</string>
+    <string name="title_activity_informacion">Informacion</string>
+    <string name="tituloMezquita">Mezquita</string>
+    <string name="tituloAlcazar">Alcazar</string>
+    <string name="tituloAlhambra">Alhambra</string>
+    <string name="tituloAlcazaba">Alcazabar</string>
+    <string name="tituloTorreDelOro">TorreDelOro</string>
+    <string name="tituloMonumentoALasCortes">Monumento a las Cortes</string>
+    <string name="descripcionMezquita">
+        Levantada sobre una iglesia visigoda en el año 785, la Mezquita de Córdoba es una amalgama de estilos arquitectónicos y símbolo de la historia de la ciudad. Se accede por el Patio de los Naranjos y la puerta de Las Palmas da acceso a la mezquita y se descubre un bello laberinto de columnas bicolores de mármol, jaspe y granito rematadas con arcos. Destaca el mihrab, un joyel de mármol, estuco y mosaicos bizantinos coloreados sobre fondo de oro
+    </string>
+    <string name="descripcionAlcazar">El Alcázar de los Reyes Cristianos, fortaleza y palacio de sólidos muros, encierra"
+            en su interior gran parte de la evolución arquitectónica de Córdoba. Restos romanos y visigodos conviven con "
+            los de origen árabe en este majestuoso solar, ya que fue lugar predilecto de los distintos gobernantes de la ciudad."
+            Cuando en 1236 Córdoba es conquistada por Fernando III el Santo, el edificio, que formaba parte del antiguo "
+            Palacio Califal, estaba totalmente asolado. Alfonso X el Sabio comienza su restauración, completada durante el"
+            reinado de Alfonso XI. A lo largo de la Historia se le ha dado múltiples usos, como Sede del Santo Oficio "
+            (Inquisición), o cárcel (en la primera mitad del siglo XIX).
+    </string>
+    <string name="descripcionAlhambra">
+        Construida en 1238, es una de las maravillas del mundo. Se trata de un bello conjunto de edificios, jardines y patios rectangulares, fuentes, frondosas alamedas y arroyos. Los edificios más importantes son la Alcazaba por ser el más antiguo y la Torre de la Vela por sus preciosas vistas del conjunto, sin olvidar el señorial patio de los Leones y los jardines del Generalife.
+    </string>
+    <string name="descripcionTorreDelOro">
+        Es una de las últimas muestras de arte almohade en Sevilla. Se cree que su nombre se lo debe al color de los azulejos que la recubrían y adquirían tonalidades doradas al brillo del sol. Hoy la Torre del Oro alberga el Museo Naval.
+    </string>
+    <string name="descripcionAlcazaba">
+        La Alcazaba de Almería es la más grande construida en España y entorno a ella ha crecido la ciudad. Construida en el 955, la forman tres recintos. El primero lo ocupan los jardines; la segunda es la de las dependencias palaciegas, entre las que destaca el edificio de Los Aljifes califales; el tercer recinto conserva los restos de un castillo construido tras la reconquista.
+    </string>
+    <string name="descripcionMonumentoALasCortes">
+        Construido en 1912 por el centenario de la Constitución de Cádiz, este monumento está integrado entre los jardines de la Plaza de España. Allí, se alza este monumento con esculturas repletas de simbolismo y alegorías de la guerra, la paz o la resistencia gaditana durante la Guerra de la Independencia.
+    </string>
+</resources>

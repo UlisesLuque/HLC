@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oscurisima"
+    android:paddingTop="50dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvEliga"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/nombreEquipoLocal"
+            android:id="@+id/tvEquipo1"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/etEquipo1"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/nombreEquipoVisitante"
+            android:id="@+id/tvEquipo2"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/etEquipo2"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estblecerEquipos"
+            android:id="@+id/btGuardar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mi_boton"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/ivImagen"
+        android:layout_weight="30"
+        android:src="@drawable/mezquita_description"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/tvTitulo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="iashdah asjdhaosjid ads  sdfsdf sdf ssdf sdf sdf sskldjas asoidj kjns alisj asjdasdhoiasd aosdjaosjd"
+            android:id="@+id/tvDescripcion" />
+    </LinearLayout>
+
+</LinearLayout>

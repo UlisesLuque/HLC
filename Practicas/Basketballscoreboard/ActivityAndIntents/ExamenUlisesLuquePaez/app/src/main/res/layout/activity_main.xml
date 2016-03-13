@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#212121">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvCantidad"
+            android:text="@string/tvCantidad"
+            android:textColor="#FFFFFF"
+            android:layout_weight="6"
+            android:textSize="24dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:id="@+id/etCantidad"
+            android:layout_weight="4"
+            android:singleLine="false"
+            android:background="#FFFFFF"
+            android:text="0"
+            android:layout_marginBottom="10dp"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvMoneda"
+            android:text="@string/tvResultado"
+            android:layout_weight="1"
+            android:gravity="top|center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/tvResultado"
+            android:layout_weight="4"
+            android:text="0"
+            android:textSize="48sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:layout_margin="5dp">
+
+        <TableRow android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button android:text="@string/USD"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btUSD"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/JPY"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btJPY"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/BGN"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btBGN"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+        </TableRow>
+        <TableRow android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button android:text="@string/CZK"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btCZK"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/DKK"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btDKK"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/GBP"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btGBP"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+        </TableRow>
+        <TableRow android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button android:text="@string/HUF"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btHUF"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/PLN"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btPLN"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/RON"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btRON"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+        </TableRow>
+        <TableRow android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button android:text="@string/SEK"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btSEK"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/CHF"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btCHF"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+            <Button android:text="@string/NOK"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/btNOK"
+                android:background="#1e88e5"
+                android:textColor="#FFFFFF"
+                android:layout_margin="1dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

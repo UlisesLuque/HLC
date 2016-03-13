@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_item.xml",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_planet.xml",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\layout\\fragment_planet.xml"
+    }
+]

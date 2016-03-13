@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wwwul.baloncesto.MainActivity">
+
+    <item
+        android:id="@+id/itemContador"
+        android:orderInCategory="100"
+        android:title="@string/itemContador"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itemEquipos"
+        android:orderInCategory="100"
+        android:title="@string/itemEquipos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itemAcercaDe"
+        android:orderInCategory="100"
+        android:title="@string/itemAcercaDe"
+        app:showAsAction="never" />
+
+</menu>

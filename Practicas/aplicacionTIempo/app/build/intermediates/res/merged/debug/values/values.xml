@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="amanNombre">Amanecer</string>
+    <string name="amanecerNombre">Amanecer: </string>
+    <string name="anochecerNombre">Atardecer: </string>
+    <string name="app_name">El tiempo</string>
+    <string name="buscar">Buscar</string>
+    <string name="buscarCoordLat">Lat</string>
+    <string name="buscarCoordLon">Lon</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cargar_xml_sax">Cargar XML (SAX)</string>
+    <string name="cloudsName">Nubes: </string>
+    <string name="coordLatNombre">Latitud: </string>
+    <string name="coordLongNombre">Longitud: </string>
+    <string name="ejemplo">ej. Madrid</string>
+    <string name="humidityNombre">Humedad: </string>
+    <string name="otraCiudad">Buscar</string>
+    <string name="paisNombre">País: </string>
+    <string name="precipitacionNombre">Precipitaciones: </string>
+    <string name="pressureNombre">Presión: </string>
+    <string name="temperaturaMaxNombre">Temp. máx: </string>
+    <string name="temperaturaMinNombre">Temp. mín: </string>
+    <string name="temperaturaNombre">Temperatura: </string>
+    <string name="temperaturaValueNombre">Actual: </string>
+    <string name="tvCoordenadas">Coordenadas</string>
+    <string name="windDirectionNombre">Dirección: </string>
+    <string name="windNombre">Viento: </string>
+    <string name="windSpeedNombre">Velocidad: </string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

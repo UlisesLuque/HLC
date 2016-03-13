@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_drawer.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\action_search.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\drawable-xhdpi\\action_search.png"
+    },
+    {
+        "merged": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drawer_shadow.9.png",
+        "source": "C:\\Users\\wwwul\\AndroidStudioProjects\\PracticaNavigationDrawer\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+    }
+]

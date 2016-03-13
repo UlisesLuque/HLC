@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExamenUlisesLuquePaez</string>
+    <string name="tvCantidad">Cantidad:</string>
+    <string name="tvResultado">Resultado:</string>
+    <string name="USD">USD</string>
+    <string name="JPY">JPY</string>
+    <string name="BGN">BGN</string>
+    <string name="CZK">CZK</string>
+    <string name="DKK">DKK</string>
+    <string name="GBP">GBP</string>
+    <string name="HUF">HUF</string>
+    <string name="PLN">PLN</string>
+    <string name="RON">RON</string>
+    <string name="SEK">SEK</string>
+    <string name="CHF">CHF</string>
+    <string name="NOK">NOK</string>
+
+</resources>

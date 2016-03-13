@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCiudad"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:singleLine="true"
+                android:hint="@string/ejemplo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordenadas"
+                android:id="@+id/textView11" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buscarCoordLon"
+                    android:id="@+id/textView13"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="bottom" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCoordLon"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="3"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:hint="0" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buscarCoordLat"
+                    android:id="@+id/textView14"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="bottom" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCoordLat"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="3"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:maxWidth="3dp"
+                    android:hint="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
